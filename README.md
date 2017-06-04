@@ -1,2 +1,2 @@
 # final_project
-類別功能
+分類功能

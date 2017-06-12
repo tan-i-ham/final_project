@@ -18,7 +18,7 @@
     <!--<link rel="stylesheet" href="CSS/style.css" />-->
 </head>
 
-<body>
+<body style="background-color: orange">
     <h1>{{ question.question_text }}</h1>
 
     <table class="table table-bordered;">
@@ -27,9 +27,9 @@
             <td>名稱</td>
             <td>投票數</td>
         </tr>
-        {% for choice in question.choice_set.all %}
+        {% for choice in question %}
         <tr>
-            <td>{{ choice.id }}</td>
+            <td>{{ forloop.counter }}</td>
             <td>{{ choice.choice_text }}</td>
             <td>{{ choice.votes }}</td>
         </tr>
@@ -37,9 +37,10 @@
         {% endfor %}
 
     </table>
-    {% comment %}
-    <p class="text-right"><a href="{% url 'polls:detail' question.id %}" class="btn">投票區</a></p>{% endcomment %}
-    <!--<a href="{% url 'polls:index'%}">回首頁</a>-->
+    <ul class="list-inline">
+        <li><a href="{% url 'polls:detail' q.id %} " class="btn ">投票區</a></li>
+        <li><a href="{% url 'polls:index'%} " class="btn ">回首頁</a></li>
+    </ul>
 </body>
 
 </html>

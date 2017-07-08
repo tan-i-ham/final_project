@@ -58,8 +58,8 @@
 .up {
     position: absolute;
     overflow: hidden;
-    top: 40%;
-    left: 30%;
+    top: 50%;
+    left: 40%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
@@ -273,7 +273,7 @@ body {
     font-family: 微軟正黑體;
     font-weight: bold;
     color: #3B2D27;
-    font-size: 20px;
+    font-size: 28px;
     padding: 16px 32px;
 }
 
@@ -320,7 +320,7 @@ body {
 }
 
 
-/*找飲料圖片*/
+/*找飲料CSS*/
 
 .image3 {
     width: 80%;
@@ -328,12 +328,86 @@ body {
     opacity: 0.65;
 }
 
+.back {
+    position: relative;
+    left: 40px;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* The Close Button */
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    padding: 5px 16px;
+    background-color: orange;
+    color: white;
+}
+
+.modal-body {
+    font-family: 微軟正黑體;
+    padding: 2px 16px;
+}
+
 .image3-text {
     font-family: 微軟正黑體;
     font-weight: bold;
     white-space: nowrap;
-    color: darkblue;
-    font-size: 20px;
+    color: white;
+    font-size: 30px;
     position: absolute;
     overflow: hidden;
     top: 50%;
@@ -342,6 +416,47 @@ body {
     -ms-transform: translate(-50%, -50%);
 }
 
-.back {
-    border: 2px solid orange;
+.image3-text:hover {
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    white-space: nowrap;
+    color: #29ABE2;
+    font-size: 35px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+
+/*首頁的價格大比拚和品牌總覽CSS*/
+
+.text4-title {
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    white-space: nowrap;
+    color: #3B2D27;
+    font-size: 35px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.text4-title:hover {
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    white-space: nowrap;
+    color: #3B2D27;
+    font-size: 45px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }

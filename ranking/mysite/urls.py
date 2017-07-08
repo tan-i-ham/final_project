@@ -19,7 +19,6 @@ from django.conf import settings
 
 urlpatterns = [
 	url(r'^polls/', include('polls.urls')),
-    url(r'^classify/', include('classify.urls')),
     url(r'^admin/', admin.site.urls),
 ]
 

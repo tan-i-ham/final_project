@@ -51,19 +51,15 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-
                             <ul class="nav navbar-nav">
                                 <li><a href="http://127.0.0.1:8000/polls">首頁</a></li>
                                 <li><a href="http://127.0.0.1:8000/polls/about">關於我們</a></li>
                                 <li><a href="http://127.0.0.1:8000/polls/3/rankboard/">人氣排行</a></li>
                             </ul>
                         </div>
-                        <div>
-
-                        </div>
                         <div class="collapse navbar-collapse" id="example-nav-collapse">
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a href="http://127.0.0.1:8000/polls/find/">找飲料　</a></li>
+                                <li><a href="http://127.0.0.1:8000/polls/find/">找飲料</a></li>
                                 <li><a href="http://127.0.0.1:8000/polls/brand/">品牌總覽</a></li>
                                 <li><a href="http://127.0.0.1:8000/polls/brand/#middle">價格大比拚</a></li>
                             </ul>
@@ -94,7 +90,6 @@
                         var data = {
                             labels: ["{{choices.0.0}}", "{{choices.1.0}}", "{{choices.2.0}}", "{{choices.3.0}}", "{{choices.4.0}}",
                                 "{{choices.5.0}}", "{{choices.6.0}}", "{{choices.7.0}}", "{{choices.8.0}}", "{{choices.9.0}}",
-                                "{{choices.10.0}}", "{{choices.11.0}}", "{{choices.12.0}}",
                             ],
                             datasets: [{
                                 label: "品牌得票數",
@@ -105,7 +100,6 @@
                                 hoverBorderColor: "rgba(1,1,1,1)",
                                 data: ["{{choices.0.1}}", "{{choices.1.1}}", "{{choices.2.1}}", "{{choices.3.1}}", "{{choices.4.1}}",
                                     "{{choices.5.1}}", "{{choices.6.1}}", "{{choices.7.1}}", "{{choices.8.1}}", "{{choices.9.1}}",
-                                    "{{choices.10.1}}", "{{choices.11.1}}", "{{choices.12.1}}",
                                 ],
                             }]
                         };
@@ -124,7 +118,7 @@
                     </script>
                 </div>
                 <br><br>
-                <h3 class="text3-title">喜歡的店還沒上榜嗎？快來投票！</h3>
+                <h2 class="text3-title">喜歡的店還沒上榜嗎？快來投票！</h2>
             </div>
 
             <div class="col-sm-12 backgroundimg" id="vote">

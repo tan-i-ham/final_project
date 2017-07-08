@@ -1,3 +1,13 @@
+.row {
+    background-color: #EFEFEF;
+}
+
+#bottom {
+    background-color: #EFEFEF;
+    padding: 0px;
+    margin: 0px;
+}
+
 .navbar {
     font-family: 微軟正黑體;
 }
@@ -7,8 +17,8 @@
 }
 
 .img-responsive {
-    max-width: 300px;
     max-height: 300px;
+    max-width: 300px;
 }
 
 #myh1 {

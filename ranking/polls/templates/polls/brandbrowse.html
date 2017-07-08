@@ -35,6 +35,22 @@
             <nav class="navbar transparent navbar-fixed-top" role="navigation">
                 <nav class="navbar-inner">
                     <div class="container">
+                        <div class="col-lg-12">
+                            <div class="col-sm-5"></div>
+
+                            <div class="col-sm-2">
+                                <p class="text-center">
+                                    <a class="navbar-brand" href="http://127.0.0.1:8000/polls/">
+                                        <img src="{% static 'polls/img/logo.png' %}" width="110%">
+                                    </a>
+                                </p>
+                            </div>
+
+                            <div class="col-sm-5">
+
+                            </div>
+
+                        </div>
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-nav-collapse">
                             <span class="sr-only">Toggle navigation</span>
@@ -43,24 +59,16 @@
                             <span class="icon-bar"></span>
                         </button>
                             <ul class="nav navbar-nav">
-                                <li><a href="http://127.0.0.1:8000/polls/3/rankboard/">首頁</a></li>
-                                <li><a href="http://127.0.0.1:8000/polls/3/rankboard/">關於我們</a></li>
+                                <li><a href="http://127.0.0.1:8000/polls">首頁</a></li>
+                                <li><a href="http://127.0.0.1:8000/polls/about">關於我們</a></li>
                                 <li><a href="http://127.0.0.1:8000/polls/3/rankboard/">人氣排行</a></li>
                             </ul>
                         </div>
-                        <div>
-                            <div class="col-lg-3"></div>
-                            <div>
-                                <a class="navbar-brand" href="http://127.0.0.1:8000/polls/">
-                                    <img src="{% static 'polls/img/logo-s.png' %}" width="130%">
-                                </a>
-                            </div>
-                        </div>
                         <div class="collapse navbar-collapse" id="example-nav-collapse">
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a href="http://127.0.0.1:8000/polls/find/">找飲料　</a></li>
+                                <li><a href="http://127.0.0.1:8000/polls/find/">找飲料</a></li>
                                 <li><a href="http://127.0.0.1:8000/polls/brand/">品牌總覽</a></li>
-                                <li><a href="#middle">價格大比拚</a></li>
+                                <li><a href="http://127.0.0.1:8000/polls/brand/#middle">價格大比拚</a></li>
                             </ul>
                         </div>
                     </div>
@@ -94,7 +102,7 @@
                                         <div class="col-lg-2"></div>
                                         <div class="col-lg-8">
                                             <div class="col-lg-4">
-                                                <a href="http://127.0.0.1:8000/polls/store1/">
+                                                <a href="http://127.0.0.1:8000/polls/store1/" target="_blank">
                                                     <img src="{% static 'polls/img/storelogo1.png' %}" alt="介紹圖" class="image2">
                                                     <div class="middle">
                                                         <div class="text3-body">斜角巷</div>
@@ -102,7 +110,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-lg-4">
-                                                <a href="http://127.0.0.1:8000/polls/store2/">
+                                                <a href="http://127.0.0.1:8000/polls/store2/" target="_blank">
                                                     <img src="{% static 'polls/img/storelogo2.png' %}" alt="介紹圖" class="image2">
                                                     <div class="middle">
                                                         <div class="text3-body">丸作</div>
@@ -110,7 +118,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-lg-4">
-                                                <a href="http://127.0.0.1:8000/polls/store3/">
+                                                <a href="http://127.0.0.1:8000/polls/store3/" target="_blank">
                                                     <img src="{% static 'polls/img/storelogo3.png' %}" alt="介紹圖" class="image2">
                                                     <div class="middle">
                                                         <div class="text3-body">迷客夏</div>
@@ -125,7 +133,7 @@
                                         <div class="col-lg-2"></div>
                                         <div class="col-lg-8">
                                             <div class="col-lg-4">
-                                                <a href="http://127.0.0.1:8000/polls/store4/">
+                                                <a href="http://127.0.0.1:8000/polls/store4/" target="_blank">
                                                     <img src="{% static 'polls/img/storelogo4.png' %}" alt="介紹圖" class="image2">
                                                     <div class="middle">
                                                         <div class="text3-body">一芳</div>
@@ -133,7 +141,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-lg-4">
-                                                <a href="http://127.0.0.1:8000/polls/store5/">
+                                                <a href="http://127.0.0.1:8000/polls/store5/" target="_blank">
                                                     <img src="{% static 'polls/img/storelogo5.png' %}" alt="介紹圖" class="image2">
                                                     <div class="middle">
                                                         <div class="text3-body">芭樂芭</div>
@@ -141,7 +149,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-lg-4">
-                                                <a href="http://127.0.0.1:8000/polls/store6/">
+                                                <a href="http://127.0.0.1:8000/polls/store6/" target="_blank">
                                                     <img src="{% static 'polls/img/storelogo6.png' %}" alt="介紹圖" class="image2">
                                                     <div class="middle">
                                                         <div class="text3-body">出櫃</div>
@@ -156,7 +164,7 @@
                                         <div class="col-lg-2"></div>
                                         <div class="col-lg-8">
                                             <div class="col-lg-4">
-                                                <a href="http://127.0.0.1:8000/polls/store7/">
+                                                <a href="http://127.0.0.1:8000/polls/store7/" target="_blank">
                                                     <img src="{% static 'polls/img/storelogo7.png' %}" alt="介紹圖" class="image2">
                                                     <div class="middle">
                                                         <div class="text3-body">Mr. Wish</div>
@@ -164,7 +172,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-lg-4">
-                                                <a href="http://127.0.0.1:8000/polls/store8/">
+                                                <a href="http://127.0.0.1:8000/polls/store8/" target="_blank">
                                                     <img src="{% static 'polls/img/storelogo8.png' %}" alt="介紹圖" class="image2">
                                                     <div class="middle">
                                                         <div class="text3-body">康青龍</div>
@@ -172,7 +180,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-lg-4">
-                                                <a href="http://127.0.0.1:8000/polls/store9/">
+                                                <a href="http://127.0.0.1:8000/polls/store9/" target="_blank">
                                                     <img src="{% static 'polls/img/storelogo9.png' %}" alt="介紹圖" class="image2">
                                                     <div class="middle">
                                                         <div class="text3-body">茶湯會</div>
@@ -202,7 +210,7 @@
                                         <div class="col-lg-2"></div>
                                         <div class="col-lg-8">
                                             <div class="col-lg-4">
-                                                <a href="http://127.0.0.1:8000/polls/store10/">
+                                                <a href="http://127.0.0.1:8000/polls/store10/" target="_blank">
                                                     <img src="{% static 'polls/img/storelogo10.png' %}" alt="介紹圖" class="image2">
                                                     <div class="middle">
                                                         <div class="text3-body">圓石</div>
@@ -436,14 +444,18 @@
                     </div>
                 </div>
             </div>
-
+            <div class="row">
+                <br id="middle">
+            </div>
+            <div class="row">
+                <br><br><br>
+            </div>
             <div class="row text-center">
                 <h3 class="text3-title">看看價格吧！</h3>
             </div>
 
-
             <!--價格圖-->
-            <div class="row" id="middle">
+            <div class="row">
                 <div class="col-sm-12 text-center">
 
                     <div class="chart-container" id="chart" style="position: relative; height:70%; width:70%">
@@ -451,7 +463,9 @@
                         <script>
                             var canvas = document.getElementById('myChart');
                             var data = {
-                                labels: ["{{store.0}}", "{{store.1}}", "{{store.2}}", ],
+                                labels: ["{{store.0}}", "{{store.1}}", "{{store.2}}", "{{store.3}}",
+                                    "{{store.4}}", "{{store.5}}", "{{store.6}}", "{{store.7}}",
+                                ],
                                 datasets: [{
                                     label: "平均價格",
                                     backgroundColor: "#F59D00",
@@ -459,7 +473,10 @@
                                     borderWidth: 1,
                                     hoverBackgroundColor: "rgba(245,157,0,0.5)",
                                     hoverBorderColor: "rgba(1,1,1,1)",
-                                    data: ["{{a}}", "{{b}}", "{{c}}", 0],
+                                    data: ["{{a}}", "{{b}}", "{{c}}", "{{d}}", "{{e}}",
+                                        "{{f}}", "{{g}}", "{{h}}",
+                                        0
+                                    ],
                                 }]
                             };
                             var option = {
